@@ -45,7 +45,7 @@ public class Assignment2 {
 	}
 
 	@Test(priority = 1)
-	public void registerUser() {
+	public void validateRegisterUser() {
 
 		WebElement myAccount = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='My Account']")));
@@ -93,7 +93,7 @@ public class Assignment2 {
 
 	@Test(dependsOnMethods = "registerUser")
 
-	public void signIn() {
+	public void validateSignIn() {
 		taskMethod();
 
 		WebElement emailAddress = wait
@@ -150,7 +150,7 @@ public class Assignment2 {
 	}
 
 	@Test(dependsOnMethods = "signIn")
-	public void loginafterPasswordUpdate() {
+	public void validateLoginAfterPasswordUpdate() {
 
 		taskMethod();
 
